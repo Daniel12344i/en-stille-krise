@@ -14,13 +14,17 @@ body {
  /* Erstatt 'path/to/your/image.jpg' med banen til ditt bilde */
     
     color: white;
+
 }
+
 
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(4, 3, 3);
+    
+    margin-top:100px;
 }
 
 /* Resten av stilen for info-section, chart-section, text-section, etc. ... */
@@ -35,6 +39,8 @@ body {
     width: 100%;
 
 }
+
+
 
 
 .text-section1 {
@@ -66,12 +72,15 @@ article{
 .chart-section,
 .text-section {
     max-width: 800px;
-    margin-top: 300px;
+    
+    margin-bottom: 1000px;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
     width: 100%;
     text-align: center;
+    margin: auto;
+     /* Sentrer elementet horisontalt */
 }
 
 .chart {
@@ -116,6 +125,11 @@ th {
     width: 100%;
 }
 
+.newcolor{
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+}
 
 .text-section:last-child {
     background-image: url('img/happyyoungmen.jpg');
