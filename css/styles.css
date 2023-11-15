@@ -115,3 +115,39 @@ th {
     color: white;
     width: 100%;
 }
+
+
+.text-section:last-child {
+    background-image: url('img/happyyoungmen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* For å sikre at bakgrunnsbildet dekker hele høyden av visningen */
+    color: white; /* Juster teksten til hvit farge for bedre synlighet */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 100px;
+    }
+
+    .text-section1 {
+        margin-top: 10px;
+    }
+
+    .second-section,
+    .text-section1,
+    .info-section,
+    .chart-section,
+    .text-section {
+        padding: 10px;
+        margin-top: 100px;
+    }
+}
+  
