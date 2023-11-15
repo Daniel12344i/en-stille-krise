@@ -1,54 +1,71 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Hent data fra tabellen
-    var table = document.getElementById("data-table");
-    var data = [];
-    for (var i = 1; i < table.rows.length; i++) {
-        var rowData = {
-            year: table.rows[i].cells[0].innerHTML,
-            men: parseInt(table.rows[i].cells[1].innerHTML),
-            women: parseInt(table.rows[i].cells[2].innerHTML),
-            total: parseInt(table.rows[i].cells[3].innerHTML)
-        };
-        data.push(rowData);
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  var ctx = document.getElementById("myChart").getContext("2d");
 
-    // Opprett en enkel linjegraf
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: data.map(item => item.year),
-            datasets: [
-                {
-                    label: 'Menn',
-                    borderColor: 'blue',
-                    data: data.map(item => item.men)
-                },
-                {
-                    label: 'Kvinner',
-                    borderColor: 'pink',
-                    data: data.map(item => item.women)
-                },
-                {
-                    label: 'Begge kjønn',
-                    borderColor: 'green',
-                    data: data.map(item => item.total)
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                x: {
-                    type: 'linear',
-                    position: 'bottom'
-                },
-                y: {
-                    type: 'linear',
-                    position: 'left'
-                }
-            }
-        }
-    });
+  var data = {
+    labels: ["2015", "2020", "2021", "2022"],
+    datasets: [
+      {
+        label: "Menn",
+        backgroundColor: [
+          "rgba(75, 192, 192, 0.6)",
+          "rgba(75, 192, 192, 0.6)",
+          "rgba(75, 192, 192, 0.6)",
+        ],
+        borderColor: [
+          "rgba(75, 192, 192, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(75, 192, 192, 1)",
+        ],
+        borderWidth: 1,
+        data: [404, 468, 484, 436],
+      },
+      {
+        label: "Kvinner",
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(255, 99, 132, 0.6)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(255, 99, 132, 1)",
+          "rgba(255, 99, 132, 1)",
+        ],
+        borderWidth: 1,
+        data: [192, 175, 176, 174],
+      },
+      {
+        label: "Begge kjønn",
+        backgroundColor: [
+          "rgba(255, 205, 86, 0.6)",
+          "rgba(255, 205, 86, 0.6)",
+          "rgba(255, 205, 86, 0.6)",
+        ],
+        borderColor: [
+          "rgba(255, 205, 86, 1)",
+          "rgba(255, 205, 86, 1)",
+          "rgba(255, 205, 86, 1)",
+        ],
+        borderWidth: 1,
+        data: [596, 643, 660, 610],
+      },
+    ],
+  };
+
+  var options = {
+    scales: {
+      x: {
+        stacked: false, // Ikke stablet på x-aksen
+      },
+      y: {
+        stacked: false, // Ikke stablet på y-aksen
+      },
+    },
+  };
+
+  var myBarChart = new Chart(ctx, {
+    type: "bar",
+    data: data,
+    options: options,
+  });
 });

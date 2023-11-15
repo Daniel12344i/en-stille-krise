@@ -1,36 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    
 }
 
-header {
+.header {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 500px; 
+    background-image: url('/img/sadman.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;/* Juster padding for å passe størrelsen på overskriften */
+ /* Erstatt 'path/to/your/image.jpg' med banen til ditt bilde */
+    
     color: white;
-    background-image: url(https://unsplash.com/photos/a-man-holds-his-head-while-sitting-on-a-sofa-BuNWp1bL0nc);
 }
 
-section {
-    margin: 20px auto;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(4, 3, 3);
+}
+
+/* Resten av stilen for info-section, chart-section, text-section, etc. ... */
+
+
+.second-section{
+    max-width: 800px;
+    margin-top: 300px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
+    width: 100%;
 
 }
 
 
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-   
+.text-section1 {
+    height: 800px;
+    margin-top: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    background-image: url(/img/sad-youngman.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    
 }
 
-table {
+article{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+
+.info-section,
+.chart-section,
+.text-section {
+    max-width: 800px;
+    margin-top: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.chart {
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.data-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -47,17 +100,18 @@ th {
     color: white;
 }
 
-h2 {
+.text-section h2 {
     color: #333;
 }
 
-p {
+.text-section p {
     margin-bottom: 15px;
 }
 
-footer {
+.footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+    width: 100%;
 }

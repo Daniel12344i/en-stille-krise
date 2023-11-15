@@ -5,101 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>En stille krise</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <header
-      style="
-        background-image: url(https://unsplash.com/photos/a-man-holds-his-head-while-sitting-on-a-sofa-BuNWp1bL0nc);
-      "
-    >
+    <header class="header">
       <h1>En stille krise</h1>
     </header>
+    <main class="main">
+      <section class="info-section">
+        <h2 style="text-align: center">Stille epidemi av mental helse</h2>
+        <p>
+          I de siste årene har en stille epidemi brutt ut, der mental helse har
+          vært et gjennomgående tema i flere år,men unge menn har til nå ikke
+          vært flinke nok til å spørre om hjelp.
+        </p>
+      </section>
+      <section class="second-section">
+        <p>
+          Ofte er dette bunnet i sosiale forventninger og stigma knyttet til å
+          snakke om følelsene sine. I følge av folkehelserapporten viser det to
+          av tre som tar sitt eget liv, er menn, dobbelt så mange menn er
+          alkoholmisbrukere og de aller fleste spilleravhengig er menn.
+        </p>
+      </section>
+      <section class="chart-section">
+        <h2 style="text-align: center">
+          Selvmord etter kjønn og årstall. Utvalgte år 2015-2022
+        </h2>
+        <canvas id="myChart" class="chart" width="400" height="200"></canvas>
+        <div class="table-container">
+          <table id="data-table" class="data-table">
+            <!-- ... (samme som tidligere) ... -->
+          </table>
+        </div>
+      </section>
 
-    <section class="front">
-      <img src="fornt.jpg" alt="Stor bilde" />
+      <div id="main-background">
+      
+      <section class="text-section1">
+        <article>
+        <h2 style="text-align: center">Menn blir ikke forstått</h2>
+        <p>
+          Menn har mer press på seg til å være sterke og uovervinnelige. Dette
+          kan gjøre det vanskeligere for noen å snakke om følelsene sine og be
+          om hjelp.Når de søker hjelp så er det ofte gått langt og veien tilbake
+          blir for mange ofte for lang. Førsteamanuensis Marie Dahlen Granrud
+          ved Høgskolen i Innlandet har forsket på kjønnsforskjeller i bruk av
+          skoletjenester og er bekymret for guttene, hun sier: “De har vokst opp
+          i en kultur med femininitet og maskulinitet, med kjønnsroller, og de
+          snakker ikke om følelser” .
+        </p>
+      </article>
 
-      <h2>Stille epidemi av mental helse</h2>
-      <p>
-        I de siste årene har en stille epidemi brutt ut, der mental helse har
-        vært et gjennomgående tema i flere år,men unge menn har til nå ikke vært
-        flinke nok til å spørre om hjelp. Ofte er dette bunnet i sosiale
-        forventninger og stigma knyttet til å snakke om følelsene sine. I følge
-        av folkehelserapporten viser det to av tre som tar sitt eget liv, er
-        menn, dobbelt så mange menn er alkoholmisbrukere og de aller fleste
-        spilleravhengig er menn.
-      </p>
-
-      <canvas id="myChart" width="400" height="200"></canvas>
-      <!-- Inkluder tabellen -->
-      <table id="data-table">
-        <tr>
-          <th>År</th>
-          <th>Menn</th>
-          <th>Kvinner</th>
-          <th>Begge kjønn</th>
-        </tr>
-        <tr>
-          <td>2015</td>
-          <td>404</td>
-          <td>192</td>
-          <td>596</td>
-        </tr>
-        <tr>
-          <td>2020</td>
-          <td>468</td>
-          <td>175</td>
-          <td>643</td>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td>484</td>
-          <td>176</td>
-          <td>660</td>
-        </tr>
-        <tr>
-          <td>2022</td>
-          <td>436</td>
-          <td>174</td>
-          <td>610</td>
-        </tr>
-      </table>
-
-      <!-- Inkluder teksten -->
-      <h2>Menn blir ikke forstått</h2>
-      <p>
-        Menn har mer press på seg til å være sterke og uovervinnelige. Dette kan
-        gjøre det vanskeligere for noen å snakke om følelsene sine og be om
-        hjelp.Når de søker hjelp så er det ofte gått langt og veien tilbake blir
-        for mange ofte for lang. Førsteamanuensis Marie Dahlen Granrud ved
-        Høgskolen i Innlandet har forsket på kjønnsforskjeller i bruk av
-        skoletjenester og er bekymret for guttene, hun sier: “De har vokst opp i
-        en kultur med femininitet og maskulinitet, med kjønnsroller, og de
-        snakker ikke om følelser” .
-      </p>
-
-      <h2>Menns helse blir mindre tematisert enn kvinners</h2>
-      <p>
-        Menns psykiske helse har alltid vært mindre tematisert enn kvinners, og
-        dette har ført til en mangel på forståelse og støtte for menn som sliter
-        med psykiske problemer.Det er utbredt oppfatning at menn skal være
-        sterke, uavhengige og i stand til å håndtere sine egne problemer. Dette
-        fører til at mange menn føler seg isolerte og alene med sine problemer,
-        noe som kan forverre deres psykiske helse
-      </p>
-
-      <h2>Samfunnet må ta ansvar</h2>
-      <p>
-        Samfunnet må oppmuntre åpenhet om psykisk helse blant menn og tilby
-        støttegrupper og ressurser for de som sliter med psykiske problemer, ved
-        å gjøre det kan det bidra til å redusere forekomsten av psykiske
-        helseproblemer blant menn og forbedre livskvalitet for alle det
-        påvirker.
-      </p>
-
-      <p>Ring 113 hvis det er fare for liv og helse</p>
-    </section>
-
-    <footer>
+        </section>
+        <section class="text-section">
+        <h2>Menns helse blir mindre tematisert enn kvinners</h2>
+        <p>
+          Menns psykiske helse har alltid vært mindre tematisert enn kvinners,
+          og dette har ført til en mangel på forståelse og støtte for menn som
+          sliter med psykiske problemer.Det er utbredt oppfatning at menn skal
+          være sterke, uavhengige og i stand til å håndtere sine egne problemer.
+          Dette fører til at mange menn føler seg isolerte og alene med sine
+          problemer, noe som kan forverre deres psykiske helse
+        </p>
+      </section>
+      <section class="text-section">
+        <h2 style="text-align: center">Samfunnet må ta ansvar</h2>
+        <p>
+          Samfunnet må oppmuntre åpenhet om psykisk helse blant menn og tilby
+          støttegrupper og ressurser for de som sliter med psykiske problemer,
+          ved å gjøre det kan det bidra til å redusere forekomsten av psykiske
+          helseproblemer blant menn og forbedre livskvalitet for alle det
+          påvirker.
+        </p>
+      </section>
+        <p>Ring 113 hvis det er fare for liv og helse</p>
+      </section>
+    </div>
+    </main>
+    <footer class="footer">
       <p>© 2023 En stille krise</p>
     </footer>
 
