@@ -3,11 +3,14 @@ body {
     padding: 0;
     
 }
+p{
+    font-size: 18px;
+}
 
 .header {
     text-align: center;
     padding: 500px; 
-    background-image: url('/img/sadman.jpg');
+    background-image: url('/img/sadman.jpg'); /*https://pixabay.com/photos/guy-man-people-dark-shadow-hands-2617866/*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;/* Juster padding for å passe størrelsen på overskriften */
